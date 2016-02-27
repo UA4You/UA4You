@@ -1,0 +1,14 @@
+
+
+#map{
+	display: inline-block;
+    margin-left: 150px;
+}
+
+#infomap{
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-top: 20px;
+}
