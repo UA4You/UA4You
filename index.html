@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>UA4You</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ualogo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ualogo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ualogo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ualogo.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ualogo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Include de JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include de bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Include maps -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.4/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.4/leaflet.css">
+    <!-- Include our code -->
+    <script type="text/javascript" src="./js/xscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/xcss.css">
+    <!-- Include maps -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.4/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.4/leaflet.css">
+    <!-- Include our code -->
+    <script type="text/javascript" src="./js/xscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/xcss.css">
+
+</head><!--/head-->
+<style>
+      #map {
+        width: 70%;
+        height: 500px;
+      }
+    </style>
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+        <br>            
+		<a href="./index.html"><img src="./images/slider/UA4YOU.png" style="vertical-align: middle;" height="42" width="42"></a>
+
+		<div style="display: inline;vertical-align: middle;margin-top: 20px; margin-left: 20px;">
+			<h1 style="display: inline;vertical-align: middle;">
+				<a href="./index.html"><label style="color: #FF7006; font-weight:700;">UA4YOU</label></a>
+			</h1>
+		</div>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll"><a href="#services">Servicios</a></li>
+                        <li class="scroll"><a href="#mapas">Mapas</a></li>
+                        <li class="scroll"><a href="#features">Agenda</a></li>
+                        <li class="scroll"><a href="https://autentica.cpd.ua.es/cas/login?service=https%3a%2f%2fcvnet.cpd.ua.es%2fuacloud%2fhome%2findexVerificado">UACloud</a></li>
+                        <li class="scroll"><a href="#about">Sobre nosotros</a></li>
+                        <li class="scroll"><a href="#get-in-touch">Contacto</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    <section id="main-slider">
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url(images/slider/bg1.png);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h2><span>UA4You</span> toda la información de los servicios de la UA</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+             <div class="item" style="background-image: url(images/slider/bg2.png);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <h2><span>UA4You</span> toda la información de los servicios de la UA</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
+    
+        <section id="services" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Nuestros servicios</h2>
+                <p class="text-center wow fadeInDown">Entérate de todo sobre los servicios que la UA pone a tu disposición</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="./zonasestudio.html"><h4 class="media-heading">Zonas de estudio</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href=""><h4 class="media-heading">Hostelería</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-car"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h4 class="media-heading">Transporte</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-recycle"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h4 class="media-heading">Reciclaje</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-paperclip"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h4 class="media-heading">Copisteria</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h4 class="media-heading">Seguridad</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-futbol-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h4 class="media-heading">Actividades deportivas</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-heartbeat"></i>
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h4 class="media-heading">Cardioprotección</h4></a>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="mapas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Mapas</h2>
+                <p class="text-center wow fadeInDown">Encuentra cualquier sitio de la UA que estés buscando</p>
+            </div>
+            <div class="row">
+                <div id="map"></div>
+        </div>
+    </section>
+        
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Agenda</h2>
+                <p class="text-center wow fadeInDown">Conoce todas las actividades que la UA tiene preparadas para ti!</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                        
+                    <div class="container-fluid">
+                        <div class="well sidebar-nav">
+                            <div class="container-fluid">
+
+                            <ul class="nav">
+                              <li><strong>Eventos programados</strong></li>
+                              
+                              <li>
+                                <div class="clearfix">
+                                 <div class="btn-group" style="margin-left:380px;">
+                                  <button id="botonOrdenarAgenda" type="button"  class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Relevancia <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li id="ordenaRelevancia"><a href="#features">Relevancia</a></li>
+                                    <li id="ordenaPlazo"><a href="#features">Solicitud</a></li>
+                                  </ul>
+                                </div>
+
+                                <script type="text/javascript">
+                                    $(function()
+                                    {
+
+                                        $("#ordenaPlazo").click(function()
+                                        {
+                                            $("#botonOrdenarAgenda").text($(this).text());
+                                            $("#botonOrdenarAgenda").val($(this).text());
+                                            $("#botonOrdenarAgenda").append(" <span class=\"caret\"></span>");
+                                            $("#listado0").text("Premios HackForGood 2016");
+                                            $("#link0").attr("href", "eventoPremios.html");
+                                            $("#listado1").text("Plazo de solicitud: 27 de febrero de 2016");
+                                            $("#listado2").text("Moodle UA. Conceptos básicos");
+                                            $("#listado3").text("Plazo de solicitud: 7 de marzo de 2016");
+                                            $("#listado4").text("Inglés para presentaciones profesionales");
+                                            $("#listado5").text("Plazo de solicitud: 11 de abril de 2016");
+                                            $("#listado6").text("Prep. IELTS™ (BRITISH COUNCIL U.CAMBRIDGE)");
+                                            $("#listado7").text("Plazo de solicitud: 11 de abril de 2016");
+                                            $("#listado8").text("Legislación en el Entorno Digital");
+                                            $("#listado9").text("Plazo de solicitud: 11 de abril de 2016");
+                                        });
+
+                                        $("#ordenaRelevancia").click(function()
+                                        {
+                                            $("#botonOrdenarAgenda").text($(this).text());
+                                            $("#botonOrdenarAgenda").val($(this).text());                                    
+                                            $("#botonOrdenarAgenda").append(" <span class=\"caret\"></span>");
+                                            $("#listado0").text("Inglés para presentaciones profesionales");
+                                            $("#link0").attr("href", "eventoIngles.html");
+                                            $("#listado1").text("Plazo de solicitud: 11 de abril de 2016");
+                                            $("#listado2").text("Prep. IELTS™ (BRITISH COUNCIL U.CAMBRIDGE)");
+                                            $("#listado3").text("Plazo de solicitud: 11 de abril de 2016");
+                                            $("#listado4").text("Premios HackForGood 2016");
+                                            $("#listado5").text("Plazo de solicitud: 27 de febrero de 2016");
+                                            $("#listado6").text("Legislación en el Entorno Digital");
+                                            $("#listado7").text("Plazo de solicitud: 11 de abril de 2016");
+                                            $("#listado8").text("Moodle UA. Conceptos básicos");
+                                            $("#listado9").text("Plazo de solicitud: 7 de marzo de 2016");
+                                        });
+
+                                    });
+                                </script>
+                                </div>
+
+    
+                              </li>
+                              <li class="active"><a id="link0" href="eventoIngles.html"><label id="listado0">Inglés para presentaciones profesionales</label></a>
+                                <ul>
+                                    <li><label id="listado1">Plazo de solicitud: 11 de abril de 2016</label></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><label id="listado2">Prep. IELTS™ (BRITISH COUNCIL U.CAMBRIDGE)</label></a>
+                                <ul>
+                                    <li><label id="listado3">Plazo de solicitud: 11 de abril de 2016</label></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><label id="listado4">Premios HackForGood 2016</label></a>
+                                <ul>
+                                    <li><label id="listado5">Plazo de solicitud: 27 de febrero de 2016</label></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><label id="listado6">Legislación en el Entorno Digital</label></a>
+                                <ul>
+                                    <li><label id="listado7">Plazo de solicitud: 11 de abril de 2016</label></li>
+                                </ul>
+                              </li>
+                              <li><a href="#"><label id="listado8">Moodle UA. Conceptos básicos</label></a>
+                                <ul>
+                                    <li><label id="listado9">Plazo de solicitud: 7 de marzo de 2016</label></li>
+                                </ul>
+                              </li>
+                            </ul>
+
+
+
+                        </div><!--/.well -->
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                </div>
+            </div>
+
+            <div class="col-sm-6 wow fadeInLeft">
+                <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=400&amp;wkst=2&amp;hl=es&amp;bgcolor=%23ffffff&amp;src=hackforgood2016%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FMadrid" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Acerca de nosotros</h2>
+                	<div>
+
+		<h3><b>¿Quiénes somos?</b></h3>
+		<p>
+			UA4YOU, un grupo de estudiantes de la Universidad de Alicante con conciencia social acerca de los alumnos universitarios. Somos los participantes del concurso HackForGood Edgar, Alberto, Carlos, Caterina y César.
+		</p>
+
+		<br>
+
+		<p style="text-align:center">
+			<img src="./images/aboutus.jpg" width="530" height="300">
+		</p>
+
+		<br>
+		
+		<h3><b>¿Nuestra idea?</b></h3>
+		<p>La Universidad de Alicante posee numerosos servicios, lo cual dificulta para el usuario descubrir toda la oferta de la institución. Ahí es donde decidimos actuar para ofrecer al alumnado todos los servicios disponibles en la universidad.</p>
+		
+		<h3><b>¿Nuestro reto?</b></h3>
+		<p>
+			Que el estudiante tenga toda la información que más le interesa en la palma de su mano.
+		</p>
+
+		<p>Una web, bien estructurada, dinámica, accesible desde cualquier dispositivo que anime al estudiante a participar en actividades que complementen su formación profesional.</p>
+
+	</div>
+        </div>
+    </section><!--/#about-->
+
+    <section id="get-in-touch">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Contacta con nosotros</h2>
+                <p class="text-center wow fadeInDown">Estamos siempre atentos a todo aquello que tengas que decirnos. Para cualquier queja, sugerencia o aportación que quieras hacer, no dudes en contactar con nosotros.</p>
+            </div>
+        </div>
+    </section><!--/#get-in-touch-->
+
+
+    <section id="contact">
+        <div id="google-map" style="height:650px" data-latitude="38.3899155" data-longitude="-0.5138978"></div>
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <div class="contact-form">
+                            <h3>Formulario de contacto</h3>
+
+                            <address>
+                              <strong>Universidad de Alicante</strong><br>
+                              Calle Alicante, 73, 03690<br>
+                              San Vicente del Raspeig, Alicante<br>
+                              <abbr title="Phone">Teléfono:</abbr> 96 590 3400
+                            </address>
+
+                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2016 UA4You
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="http://www.twitter.com/ua_4you"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
